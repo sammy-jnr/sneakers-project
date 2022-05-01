@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 00;
+    box-sizing: border-box;
+}
+#navbar{
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+}
+#nav_section1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+#menu_icon{
+    width: 20px;
+    margin-right: 15px;
+    margin-left: 10px;
+    
+}
+#nav_section2{
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+#avatar_img,#cartimg{
+    width: 20px;
+    margin: 10px;
+}
+#logoimg{
+    width: 120px;
+    height: 20px;
+}
+#img_section{
+    width: 100vw;
+    height: 290px;
+    top: 60px;
+    position: relative;
+}
+#cart_section{
+    position: absolute;
+    top: 65px;
+    width: 360px;
+    margin: 0 15px;
+    min-height: 150px;
+    height: auto;
+    z-index: 5;
+    background-color: white;
+    border-radius: 8px;
+    display:  none;
+}
+#cartText{
+    margin: 20px;
+}
+.cartdisplay{
+    display: none;
+}
+.EachItemDiv{
+    width: auto;
+    height: 50px;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    margin: 10px 0;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#choosenitem{
+    display: block;
+}
+#checkout{
+    width: auto;
+    height: 60px;
+    color: white;
+    background-color: rgb(235, 114, 44);
+    text-align: center;
+    position: relative;
+    border-radius: 7px;
+    margin: 12px;
+    margin-top: 40px;
+    display: none;
+    padding: 20px;
+}
+#sidenav{
+    width: 250px;
+    position: absolute;
+    height: 100vh;
+    background-color: rgb(230, 228, 228);
+    z-index: 3;
+    display: none;
+}
+.sidenav_items,#close_icon{
+    font-size: 18px;
+    margin: 25px;
+}
+
+
+
+
+.shoeimgs{
+    width: 100vw;
+    height: 290px;
+    position: absolute;
+    display: none;
+}
+#shoeimg1{
+    display: block;
+}
+#nextbutton{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+    top: 140px;
+    position: absolute;
+}
+#previousbutton{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 10px;
+    top: 140px;
+    position: absolute;
+}
+/* // text section */
+#textsection{
+    position: relative;
+    top: 60px;
+    width: 100vw;
+    min-height: 450px;
+    height: auto;
+    padding: 20px;
+}
+#company_name{
+    color: orange;
+}
+#text_section1{
+    font-size: 30px;
+    margin: 15px 0;
+}
+#text_section2{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+#price_section{
+    width: auto;
+    height: 50px;
+    position: relative;
+    display: flex;
+
+}
+#activeprice_and_discount{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#oldprice{
+    width: 180px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: grey;
+    text-decoration: line-through;
+    padding: 0 20px;
+}
+#activeprice{
+    font-size: 30px;
+}
+#discount{
+    font-size: 18px;
+    background-color: rgb(165, 162, 162);
+    padding: 2px 6px;
+    color: rgb(235, 114, 44);
+}
+#numberOfItems{
+    background-color: rgb(241, 238, 238);
+    width: auto;
+    height: 60px;
+    margin: 13px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+#increaseItems,#showItems,#decreaseItems{
+    width: 60px;
+    height: 50px;
+    margin: 3px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#showItems{
+    font-size: 20px;
+}
+#addToCartButton{
+    width: auto;
+    height: 60px;
+    background-color: rgb(235, 114, 44);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+}
+#cartImg2{
+    margin-right: 14px;
+    width: 15px;
+    color: white;
+}
