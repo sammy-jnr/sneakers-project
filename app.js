@@ -147,3 +147,61 @@ addToCartButton.addEventListener("click", ()=>{
     alert("added to cart")
     document.getElementById("checkout").style.display = "block"
 })
+
+// > 900px
+let minishoe1 = document.getElementById("minishoe1")
+let minishoe2 = document.getElementById("minishoe2")
+let minishoe3 = document.getElementById("minishoe3")
+let minishoe4 = document.getElementById("minishoe4")
+
+minishoe1.addEventListener("click" ,()=>{
+    minishoe1.classList.add("activeminishoe")
+    minishoe2.classList.remove("activeminishoe")
+    minishoe3.classList.remove("activeminishoe")
+    minishoe4.classList.remove("activeminishoe")
+
+    shoeimg1.style.display = "block"
+    shoeimg2.style.display = "none"
+    shoeimg3.style.display = "none"
+    shoeimg4.style.display = "none"
+})
+
+minishoe2.addEventListener("click" ,()=>{
+    minishoe1.classList.remove("activeminishoe")
+    minishoe2.classList.add("activeminishoe")
+    minishoe3.classList.remove("activeminishoe")
+    minishoe4.classList.remove("activeminishoe")
+
+    shoeimg1.style.display = "none"
+    shoeimg2.style.display = "block"
+    shoeimg3.style.display = "none"
+    shoeimg4.style.display = "none"
+})
+
+minishoe3.addEventListener("click" ,()=>{
+    minishoe1.classList.remove("activeminishoe")
+    minishoe2.classList.remove("activeminishoe")
+    minishoe3.classList.add("activeminishoe")
+    minishoe4.classList.remove("activeminishoe")
+
+    shoeimg1.style.display = "none"
+    shoeimg2.style.display = "none"
+    shoeimg3.style.display = "block"
+    shoeimg4.style.display = "none"
+})
+
+minishoe4.addEventListener("click" ,()=>{
+    minishoe1.classList.remove("activeminishoe")
+    minishoe2.classList.remove("activeminishoe")
+    minishoe3.classList.remove("activeminishoe")
+    minishoe4.classList.add("activeminishoe")
+
+    shoeimg1.style.display = "none"
+    shoeimg2.style.display = "none"
+    shoeimg3.style.display = "none"
+    shoeimg4.style.display = "block"
+})
+
+if(window.innerWidth < 900){
+    document.getElementsByTagName("hr").style.display = "none"
+}

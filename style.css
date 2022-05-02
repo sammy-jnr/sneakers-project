@@ -49,7 +49,8 @@
 #cart_section{
     position: absolute;
     top: 65px;
-    width: 360px;
+    min-width: 250px;
+    width: 350px;
     margin: 0 15px;
     min-height: 150px;
     height: auto;
@@ -103,6 +104,9 @@
     margin: 25px;
 }
 
+#minishoediv{
+    display: none;
+}
 
 
 
@@ -226,4 +230,204 @@
     margin-right: 14px;
     width: 15px;
     color: white;
+}
+#cartimg:hover,.minishoes:hover,#increaseItems:hover,
+#decreaseItems:hover,#addToCartButton:hover,
+#previousbutton:hover,#nextbutton:hover{
+    cursor: pointer;
+}
+@media screen and (min-width:330px) and (max-width:912px) {
+    #img_section{
+        width: 330px;
+        height: 300px;
+        position: relative;
+        margin: auto;
+        left: 0;
+    }
+    .shoeimgs{
+        width: 330px;
+        height: 300px;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 912px)  {
+    #navbar{
+        position: absolute;
+        margin: 0 00px;
+    }
+    #mainsection{
+        display: flex;
+    }
+    #img_section{
+        width: 450px;
+        height: 550px;
+        position: relative;
+        margin: 30px;
+        border-radius: 15px;
+        margin-top: 90px;
+    }
+    .shoeimgs{
+        width: 410px;
+        height: 400px;
+        position: relative;
+        margin: 0px;
+        border-radius: 15px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    #textsection{
+        margin: 60px;
+        padding: 100px 0;
+    }
+    #text_section2{
+        line-height: 1.4;
+    }
+    #price_section{
+        display: block;
+    }
+    #oldprice{
+        display: flex;
+        justify-content: left;
+        padding-left: 0;
+        padding-top: 6px;
+    }
+    #numberOfItems{
+        width: 150px;
+        margin-right: 20px;
+    }
+    #addToCartButton{
+        width: 200px;
+        margin: 20px;
+    }
+    #calculation_cartdiv{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+    }
+    #nextbutton,#previousbutton,#menu_icon,#close_icon{
+        display: none;
+    }
+    #minishoediv{
+        width: 410px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .minishoes{
+        width: 80px;
+        border-radius: 10px;
+    }
+    .activeminishoe{
+        border: 3px solid rgb(235, 114, 44);
+    }
+    #sidenav{
+        display: flex;
+        width: 500px;
+        height: 70px;
+        margin: 0;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+        background-color: white;
+    }
+    #line1{
+        width: 100vw;
+        position: absolute;
+        height: 1px;
+        background-color: black;
+        top: 80px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    #logoimg{
+        width: 170px;
+        height: 33px;
+        top: 7px;
+        position: relative;
+    }
+    #sidenav{
+        display: flex;
+        width: 600px;
+        height: 80px;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+        background-color: white;
+    }
+    .sidenav_items{
+        font-size: 30px;
+        width: 300px;
+    }
+    #mainsection{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    #img_section{
+        width: 600px;
+        height: 700px;
+        position: relative;
+        margin: 30px;
+        border-radius: 15px;
+        margin-top: 90px;
+    }
+    .shoeimgs{
+        width: 560px;
+        height: 550px;
+        position: relative;
+        margin: 0px;
+        border-radius: 15px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    #minishoediv{
+        width: 560px;
+    }
+    .minishoes{
+        width: 110px;
+    }
+    #company_name,#text_section2{
+        font-size: 30px;
+    }
+    #text_section1{
+        font-size: 50px;
+        font-weight: 700;
+    }
+    #activeprice{
+        font-weight: 900;
+        font-size: 45px;
+        margin-right: 20px;
+    }
+    #oldprice{
+        font-size: 20px;
+    }
+    #discount{
+        background-color: rgb(233, 231, 231);
+    }
+    #calculation_cartdiv{
+        margin-top: 50px;
+        width: auto;
+    }
+    #numberOfItems{
+        width: 200px;
+    }
+    #addToCartButton{
+        width: 280px;
+    }
+    #line1{
+        width: 100vw;
+        position: absolute;
+        height: 1px;
+        background-color: black;
+        top: 80px;
+    }
+    #cart_section{
+        border: 1px solid;
+        position: absolute;
+        right: 0;
+    }
+    #navbar{
+        padding: 0 140px;
+    }
+    
 }
